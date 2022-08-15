@@ -8,14 +8,29 @@
 // );
 
 class Parent {
+    constructor () {
+        console.log('constructor Parent');
+    };
+
     render = () => {
         console.log('render');
     };
 };
 
 class Child extends Parent {
-    test = () => {};
+    color = null;
+
+    constructor (color) {
+        super(color);
+
+        this.color = color;
+        this.render();
+    };
+
+    render = () => {
+        console.log('Child.render', this.color);
+    };
 };
 
-const a = new Child();
-a.render();
+const a = new Child('red');
+
