@@ -1,12 +1,9 @@
-// import React from 'react';
+import React from 'react';
 
-class Car {
-    color = 'red';
-    speed = 220;
+class App extends React.Component {
+    render = () => {
+        
+    }; 
+}
 
-    go = () => {
-        console.log("GO");
-    };
-};
-
-console.log('Car', Car);
+export default App;

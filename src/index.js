@@ -7,16 +7,15 @@
 //  <App />
 // );
 
-class Car {
-    color = 'red';
-    speed = 220;
-
-    go = () => {
-        console.log("GO");
+class Parent {
+    render = () => {
+        console.log('render');
     };
 };
 
-const car1 = new Car();
-const car2 = new Car();
+class Child extends Parent {
+    test = () => {};
+};
 
-console.log('Car', car1, car2);
+const a = new Child();
+a.render();
