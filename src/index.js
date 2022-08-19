@@ -4,7 +4,7 @@ import App from './components/App.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- <App onClick={() => console.log('asdasdsa')} />
+ <App />
 );
 
 
