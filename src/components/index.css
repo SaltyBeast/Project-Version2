@@ -43,20 +43,60 @@
     margin: auto;
 }
 
+.account_wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 20%;
+    margin: 0 auto;
+    background-color: rgba(121, 121, 132, .4);
+}
+
+.avatar_wrap {
+    min-width: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid rdb(94, 94, 243);
+    object-fit: cover;
+    position: relative;
+    margin: 0 30px 10px 0;
+    background: #fff;
+}
+
+.avatar_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+}
+
+.form_wrap {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+}
+
 .accountbutton {
-    width: 100px;
-    padding: 5px 10px;
-    border-radius: 9px;
-    background-color: #4CAF50;
-    color: white;
-    transition-duration: 0.4s;
-    border-color: white;
+   color: #fff;
+   width: 80%;
+   min-width: 220px;
+   border-radius: 15px;
+   border: 3px solid rgb(94, 94, 243);
+   background-color: rgb(94, 94, 243);
+   padding: 8px 5px 8px 15px;
+   font-size: 1.4rem;
+   margin-bottom: 20px;
+   outline: transparent;
+   transition: all .3s linear;
 }
 
 .accountbutton:hover {
     cursor: pointer;
     background-color: white; 
     color: black ;
-    border-color: #4CAF50;
+    border-color: rgb(94, 94, 243);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 }

@@ -1,42 +1,35 @@
 import React from 'react';
+import { Primary as BlockPrimary } from '../components/Block/';
+import { Form as FormAccount } from '../components/Form';
 
-class Avatar extends React.Component {
-    render = () => {
-        return <img src='account.png' className='accountimg' />;
-    }; 
-};
+// class Avatar extends React.Component {
+//     render = () => {
+//         return <div className='avatar_wrap'>
+//             <img src='account.png' className='avatar_img' />;
+//         </div>
+//     }; 
+// };
 
-class Input1 extends React.Component {
-    render = () => {
-        return <input type='text' name='name' placeholder='Your name' className='accountinput' />;
-    }; 
-};
-
-class Input2 extends React.Component {
-    render = () => {
-        return <input type='text' name='nickname' placeholder='Your nickname' className='accountinput' />;
-    }; 
-};
-
-class SaveButton extends React.Component {
-    render = () => {
-        return <button className='accountbutton'>Save</button>;
-    }; 
-};
+// class Form extends React.Component {
+//     render = () => {
+//         return <div className='form_wrap'>
+//             <input className='form_input' type='name' placeholder='Your name' />
+//             <input className='form_input' type='nickname' placeholder='Your nickname' />
+//             <button className='accountbutton' type='buttion'>Save</button>
+//         </div>
+//     }; 
+// };
 
 class Account extends React.Component {
     render = () => {
         return <>
-            {/* картинка, 2 поля, кнопка сохранить */}
-            <div className='divcont'>
-            <Avatar /><br />
-            <div className='accountdiv'>
-                <Input1 />
-                <Input2 />
-            </div><br />
-           <div className='accountsave'><SaveButton /></div>
-           </div>
-        </>;
+            <BlockPrimary>
+                {/* <Avatar /> */}
+                <FormAccount> 
+                    
+                </FormAccount> 
+            </BlockPrimary>
+        </>
     }; 
 };
 
