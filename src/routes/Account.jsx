@@ -28,12 +28,14 @@ class Account extends React.Component {
     render = () => {
         return <>
             {/* картинка, 2 поля, кнопка сохранить */}
+            <div className='divcont'>
             <Avatar /><br />
             <div className='accountdiv'>
                 <Input1 />
                 <Input2 />
             </div><br />
            <div className='accountsave'><SaveButton /></div>
+           </div>
         </>;
     }; 
 };
