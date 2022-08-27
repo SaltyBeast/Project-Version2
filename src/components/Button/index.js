@@ -1,7 +1,7 @@
 import Button from './Button.jsx';
-import AccButton from './AccButton.jsx';
+import Save from './Save.jsx';
 
 export {
     Button,
-    AccButton,
+    Save,
 };
