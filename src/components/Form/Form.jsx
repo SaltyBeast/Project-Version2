@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
-const Form = styled.div`
+const Form = styled.form`
     display: flex;
-    flex-direction: column;
-    width: 480px;
 `;
 
 export default Form;

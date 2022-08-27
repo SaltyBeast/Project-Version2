@@ -1,6 +1,9 @@
 import React from 'react';
 import { Primary as BlockPrimary } from '../components/Block/';
-import { Form as FormAccount } from '../components/Form';
+import { User as FormUser } from '../components/Form';
+import { Email as AccEmail, Name as AccName } from '../components/Input';
+import { AccButton } from '../components/Button';
+import { AccImg as InputAvatar, LogoContainer } from '../components/img';
 
 // class Avatar extends React.Component {
 //     render = () => {
@@ -25,9 +28,12 @@ class Account extends React.Component {
         return <>
             <BlockPrimary>
                 {/* <Avatar /> */}
-                <FormAccount> 
-                    
-                </FormAccount> 
+                <LogoContainer><InputAvatar src='account.png' /></LogoContainer>
+                <FormUser> 
+                    <AccEmail placeholder='Your email' />
+                    <AccName placeholder='Your name' />
+                    <AccButton>Save</AccButton>
+                </FormUser> 
             </BlockPrimary>
         </>
     }; 
