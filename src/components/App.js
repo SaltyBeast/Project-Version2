@@ -1,22 +1,20 @@
- import React from 'react';
+import React from 'react';
+import * as routes from '../routes/index.js';
 
- class App extends React.Component {
-    constructor (props) {
-        super(props);
-        this.color = 'red';
-    };
-    
-    func() {
-        console.log(`=======`)
-    };
+const names = [
+    'Main',
+    'Account',
+];
 
-    render = () => {
-        return <div onClick={this.func}>
-            {this.color}
-        </div>
+class App extends React.Component {
+render = () => {
+    return names.map((moduleName, i) => {
+        const Component = routes[moduleName];
+        return <Component key={i} />
+        
+    });
     };
  };
 
  export default App;
-
 
