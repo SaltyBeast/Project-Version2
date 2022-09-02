@@ -1,0 +1,87 @@
+.container {
+    width: 640px;
+    height: 300px;
+    background: #ff9999;
+    border-radius: 10px;
+    overflow: auto;
+    border: solid 3px #ff66b3;
+    margin-left: auto;
+    margin-right: auto;
+}
+.circle {
+    float: none;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    background: red;
+    border: solid 5px #ff8080;
+    float: left;
+    margin: 40px;
+    margin-left: 75px;
+}
+
+.blockWithInfo {
+   padding-left: 50px;
+   padding-top: 50px;
+   float: none;
+}
+.enter {
+    border-radius: 6px;
+    border: solid 3px #ff8080;
+    box-shadow:  0px 0px 5px 0px #888;
+}
+.words {
+    color:#262626;
+}
+.button {
+    font-size: 15px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 40px;
+    border: solid 3px #c6ecd9;
+    background: #40bf80; 
+    display: inline-block;
+    transition: all 0.5s;
+    cursor: pointer;
+    float: none;
+    
+    
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5px;
+    transition: 0.5s;
+    
+  }
+  
+  .button:hover span {
+    padding-right: 17px;
+    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .button {
+    vertical-align:middle
+  }
+ input{
+  width: 220px;
+ }

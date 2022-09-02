@@ -3,7 +3,7 @@ import * as routes from '../routes/index.js';
 
 const names = [
     'Main',
-    'Account',
+    // 'Account',
 ];
 
 class App extends React.Component {
