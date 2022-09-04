@@ -1,11 +1,9 @@
-import React from 'react';
+import styled from 'styled-components';
 
-class Button extends React.Component {
-render = () => {
-    return <div>
-    <p><button className='button' ><span>Enter</span></button></p>
-    </div>
-    };
- };
+const Button = styled.button`
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 3px solid transparent;
+`;
 
- export default Button
+export default Button;
