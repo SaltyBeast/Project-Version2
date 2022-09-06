@@ -1,15 +1,15 @@
 
-import React from 'react';
-import './style.css';
+// import React from 'react';
+// import './style.css';
 
-class Account extends React.Component {
-render = () => {
-        return <div>
-            </div>;
-    };
- };
+// class Account extends React.Component {
+// render = () => {
+//         return <div>
+//             </div>;
+//     };
+//  };
 
- export default Account;
+//  export default Account;
 
 
 

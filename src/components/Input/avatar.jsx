@@ -18,7 +18,7 @@ const Wrapper = styled(Block)`
         display: block;
         width: 100%;
         height: 100%; 
-        background-image: url(${img});
+        background-image: url(${(props) => props.src});
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -38,9 +38,22 @@ const Wrapper = styled(Block)`
 `;
 
 class Avatar extends React.Component {
+    state = {
+            src: img
+        };
+
+    onChange = (e) => {
+        const filereader = new FileReader();
+        filereader.readAsDataURL(e.currentTarget.files[0]);
+        filereader.onload = () => {
+            let newFile = filereader.result;
+            this.setState({src: newFile});
+        };
+    };
+
     render = () => {
-        return <Wrapper>
-            <Input type='file' name='avatar'/>
+        return <Wrapper src={this.state.src}>
+            <Input type='file' name='avatar' onChange={this.onChange} />
             </Wrapper>
     };
 };
